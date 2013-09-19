@@ -6,8 +6,10 @@ textarea {
     color: #222;
 }
 
+$fontsize: 16px;
+
 body {
-    font-size: 16px;
+    font-size: $fontsize;
     line-height: 1.4;
 }
 
