@@ -1,4 +1,3 @@
-// Breakpoints
 @mixin bp($point) {
 
 	@if $point == print {
@@ -7,16 +6,17 @@
 
 }
 
-// PX to EM conversion
-@mixin em_width($px) { width: #{$px / 16}em; }
-@mixin em_height($px) { height: #{$px / 16}em; }
-@mixin em_maxwidth($px) { max-width: #{$px / 16}em; }
-@mixin em_maxheight($px) { max-height: #{$px / 16}em; }
-@mixin em_margin($top:0,$right:0,$bot:$top,$left:$right) { margin: #{$top / 16}em #{$right / 16}em #{$bot / 16}em #{$left / 16}em }
-@mixin em_padding($top:0,$right:0,$bot:$top,$left:$right) { padding: #{$top / 16}em #{$right / 16}em #{$bot / 16}em #{$left / 16}em }
-@mixin em_fontsize($px) { font-size: #{$px / 16}em; }
+@mixin em_width($px, $default: $fontsize) { width: #{$px / $default}em; }
+@mixin em_height($px, $default: $fontsize) { height: #{$px / $default}em; }
+@mixin em_maxwidth($px, $default: $fontsize) { max-width: #{$px / $default}em; }
+@mixin em_minwidth($px, $default: $fontsize) { min-width: #{$px / $default}em; }
+@mixin em_maxheight($px, $default: $fontsize) { max-height: #{$px / $default}em; }
+@mixin em_minheight($px, $default: $fontsize) { min-height: #{$px / $default}em; }
+@mixin em_margin($top:0,$right:0,$bot:$top,$left:$right, $default: $fontsize) { margin: #{$top / $default}em #{$right / $default}em #{$bot / $default}em #{$left / $default}em }
+@mixin em_padding($top:0,$right:0,$bot:$top,$left:$right, $default: $fontsize) { padding: #{$top / $default}em #{$right / $default}em #{$bot / $default}em #{$left / $default}em }
+@mixin em_fontsize($px) { font-size: #{$px / $fontsize}em; }
+@mixin em_lineheight($px, $default: $fontsize) { line-height: #{$px / $default}em; }
 
-// All vendor prefixes must be mixins
 @mixin box_shadow($hoffset: 0, $voffset: 0, $blur: 0, $spread: 0, $color: $black, $inset: false) {
 
 	@if $inset == false {
