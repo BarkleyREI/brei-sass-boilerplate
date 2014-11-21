@@ -1,43 +1,66 @@
 body * {
 	word-break: break-word;
 	word-wrap: break-word;
-	
+
 	-webkit-box-sizing: border-box;
 	-moz-box-sizing: border-box;
 	-ms-box-sizing: border-box;
 	box-sizing: border-box;
-	
+
 	background-color: transparent;
 	background-position: top center;
 	background-repeat: no-repeat;
 
 	-webkit-font-smoothing: antialiased;
 }
- 
+
+// Opinion: No underlines on links, but always underlines on hover (ian)
 a { text-decoration: none; }
 a:hover,
 a:focus { text-decoration: underline; }
 
+// Set word-break back to normal so that text inputs don't wrap
 input[type='text'],
 input[type='password'],
-input[type='search'] { 
+input[type='search'] {
 	word-break: normal;
 }
- 
+
+// Opinion: Background color to white, and shrink if necessary
 input[type='text'],
 textarea,
 select { background-color: #fff; max-width: 100%; }
- 
+
+// Opinion: Add some padding around checkboxes and radio buttons
 input[type='radio'],
 input[type='checkbox'] { margin: 0 0.4em; }
- 
+
+// Opinion: This is basically what responsive design is.
 img { max-width: 100%; }
- 
+
+// Opinion: Black borders around tables because sometimes IE doesn't draw borders at all.
 table,
 tbody,
 tr,
 td { border: 1px solid #000; }
 
-.content img { padding: 0.5em; }
-.content img[align=left] { padding: 0.5em 0.5em 0.5em 0; float: left; }
-.content img[align=right] { padding: 0.5em 0 0.5em 0.5em; float: right; }
+// Opinion: Add padding around WYSIWYG images, and set alignment in CSS for Editors that use attributes.
+.content {
+
+	img {
+
+		padding: 0.5em;
+
+		&[align=left] {
+			padding: 0.5em 0.5em 0.5em 0;
+			float: left;
+		}
+
+		&[align=right] {
+			padding: 0.5em 0 0.5em 0.5em;
+			float: right;
+		}
+
+	}
+
+}
