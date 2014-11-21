@@ -1,7 +1,7 @@
 @import "../img/*.png"; // Change to generated images directory
 @include all-img-sprites;
 
-$sprites: 	logo_header;
+$sprites: 	rocket;
 
 @mixin sprite-dimensions($name) {
 	width: img-sprite-width($name);
@@ -10,14 +10,14 @@ $sprites: 	logo_header;
 
 .sprite {
 
-	display: inline-block;	
+	display: inline-block;
 	background-color: transparent;
 
 }
 
 @each $sprite in $sprites {
 	.#{$sprite} {
-		@include img-sprite($sprite); 
+		@include img-sprite($sprite);
 		@include sprite-dimensions($sprite);
 	}
 }
