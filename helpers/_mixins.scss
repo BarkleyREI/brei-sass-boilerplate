@@ -49,7 +49,7 @@
 	min-height: #{$px / $default}em; 
 }
 
-@mixin em_padding($top:0,$right:0,$bot:$top,$left:$right, $default: $default-fontsize) { 
+@mixin em_padding($top:0,$right:$top,$bot:$top,$left:$right, $default: $default-fontsize) { 
 	padding: #{$top / $default}em #{$right / $default}em #{$bot / $default}em #{$left / $default}em 
 }
 @mixin em_fontsize($px) { 
@@ -62,7 +62,7 @@
 	line-height: #{$px / $default}em; 
 }
 
-@mixin em_margin($top: 0, $right: 0, $bot: $top, $left: $right, $default: $default-fontsize) {
+@mixin em_margin($top: 0, $right: $top, $bot: $top, $left: $right, $default: $default-fontsize) {
 	@if $top == auto {
 		$top : auto
 	} @else {
