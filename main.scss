@@ -1,5 +1,8 @@
 // Sprites
-@import "helpers/_sprites";
+//
+// Uncomment to use sprites
+//
+// @import "helpers/_sprites";
 
 // Authored Dependancies
 @import "helpers/_mixins";
@@ -8,6 +11,7 @@
 // Global
 @import "helpers/_normalize";
 @import "helpers/_defaults";
+@import "helpers/_common";
 
 // Patterns
 

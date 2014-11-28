@@ -6,12 +6,17 @@ textarea {
     color: #222;
 }
 
-$fontsize: 16px;
+$fontsize: 16;
 
 body {
     font-size: $fontsize;
     line-height: 1.4;
 }
+
+/* apply a natural box layout model to all elements */
+*, *:before, *:after {
+  -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box;
+ }
 
 /*
  * Remove text-shadow in selection highlight: h5bp.com/i
