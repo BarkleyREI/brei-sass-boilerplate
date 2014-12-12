@@ -1,16 +1,20 @@
 body * {
+	// Allow non-breaking characters to wrap
 	word-break: break-word;
 	word-wrap: break-word;
 
+	// Border-box sizing is better than content-box sizing because it includes padding and borders into the width calculation.
 	-webkit-box-sizing: border-box;
 	-moz-box-sizing: border-box;
 	-ms-box-sizing: border-box;
 	box-sizing: border-box;
 
+	// Better defaults for `background` so we can just do background: url(image) and not have to set anything else.
 	background-color: transparent;
 	background-position: top center;
 	background-repeat: no-repeat;
 
+	// Improve font rendering
 	-webkit-font-smoothing: antialiased;
 }
 
@@ -39,7 +43,6 @@ input[type='checkbox'] { margin: 0 0.4em; }
 img { max-width: 100%; }
 
 // Opinion: Black borders around tables because sometimes IE doesn't draw borders at all.
-
 table,
 tbody,
 tr,

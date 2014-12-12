@@ -12,4 +12,4 @@ Add mixins to helpers/_mixins.scss
 
 Add any common QA res CSS you do to helpers/_common.scss
 
-Don't think these are the limits. If you can think of anything else to include, do it!
+Don't think these are the limits. If you can think of anything else to include, do it!!
