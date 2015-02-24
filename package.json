@@ -1,0 +1,19 @@
+{
+  "name": "sass_boilerplate",
+  "version": "1.0.1",
+  "description": "https://github.com/BarkleyREI/sass_boilerplate",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/BarkleyREI/sass_boilerplate"
+  },
+  "author": "",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/BarkleyREI/sass_boilerplate/issues"
+  },
+  "homepage": "https://github.com/BarkleyREI/sass_boilerplate"
+}
