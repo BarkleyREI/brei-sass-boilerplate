@@ -1,13 +1,20 @@
+html,
+button,
+input,
+select,
+textarea {
+    color: #222;
+}
+
+body {
+    font-size: #{$fontsize}px;
+    line-height: 1.4;
+}
+
 body * {
 	// Allow non-breaking characters to wrap
 	word-break: break-word;
 	word-wrap: break-word;
-
-	// Border-box sizing is better than content-box sizing because it includes padding and borders into the width calculation.
-	-webkit-box-sizing: border-box;
-	-moz-box-sizing: border-box;
-	-ms-box-sizing: border-box;
-	box-sizing: border-box;
 
 	// Better defaults for `background` so we can just do background: url(image) and not have to set anything else.
 	background-color: transparent;
@@ -16,6 +23,65 @@ body * {
 
 	// Improve font rendering
 	-webkit-font-smoothing: antialiased;
+}
+
+/* apply a natural box layout model to all elements */
+*, *:before, *:after {
+  -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box;
+ }
+
+/*
+ * Remove text-shadow in selection highlight: h5bp.com/i
+ * These selection rule sets have to be separate.
+ * Customize the background color to match your design.
+ */
+::-moz-selection {
+    background: palette('root', 'selection');
+    text-shadow: none;
+}
+
+::selection {
+    background: palette('root', 'selection');
+    text-shadow: none;
+}
+
+/*
+ * A better looking default horizontal rule
+ */
+hr {
+    display: block;
+    height: 1px;
+    border: 0;
+    border-top: 1px solid palette('border');
+    margin: 1em 0;
+    padding: 0;
+}
+
+/*
+ * Remove the gap between images, videos, audio and canvas and the bottom of
+ * their containers: h5bp.com/i/440
+ */
+audio,
+canvas,
+img,
+video {
+    vertical-align: middle;
+}
+
+/*
+ * Remove default fieldset styles.
+ */
+fieldset {
+    border: 0;
+    margin: 0;
+    padding: 0;
+}
+
+/*
+ * Allow only vertical resizing of textareas.
+ */
+textarea {
+    resize: vertical;
 }
 
 // Opinion: No underlines on links, but always underlines on hover (ian)
@@ -33,7 +99,7 @@ input[type='search'] {
 // Opinion: Background color to white, and shrink if necessary
 input[type='text'],
 textarea,
-select { background-color: #fff; max-width: 100%; }
+select { background-color: palette('white'); max-width: 100%; }
 
 // Opinion: Add some padding around checkboxes and radio buttons
 input[type='radio'],
@@ -46,7 +112,7 @@ img { max-width: 100%; }
 table,
 tbody,
 tr,
-td { border: 1px solid #000; }
+td { border: 1px solid palette('black'); }
 
 // Opinion: Add padding around WYSIWYG images, and set alignment in CSS for Editors that use attributes.
 .content {
