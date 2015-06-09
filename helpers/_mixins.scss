@@ -1,49 +1,6 @@
-@import "./mixins/_layout-mixins";
-@import "./mixins/_padding";
-@import "./mixins/_margin";
+@import "./mixins/_layout";
 
+// Use foundation em-calc() for font sizing, margin, and padding.
+// margin: em-calc(16px 0); ==> margin: 1em 0;
 
-// FONTS
-@mixin em_fontsize($px) {
-	font-size: #{$px / $default-fontsize}em;
-}
-@mixin rem_fontsize($px) {
-	font-size: #{$px / $default-fontsize}rem;
-}
-@mixin em_lineheight($px, $default: $default-fontsize) {
-	line-height: #{$px / $default}em;
-}
-
-
-// MISC
-@mixin border-radius($radius) {
-	-webkit-border-radius: $radius;
-	-moz-border-radius: $radius;
-	border-radius: $radius;
-	background-clip: padding-box;  /* stops bg color from leaking outside the border */
-}
-
-@mixin vendorize($property, $value) {
-	-webkit-#{$property}: $value;
-	-moz-#{$property}: $value;
-	-ms-#{$property}: $value;
-	-o-#{$property}: $value;
-	#{$property}: $value;
-}
-
-@mixin transition($prop: all, $time: 1s, $ease: ease) {
-	-webkit-transition: $prop $time $ease;
-	-moz-transition: $prop $time $ease;
-	-o-transition: $prop $time $ease;
-	-ms-transition: $prop $time $ease;
-	transition: $prop $time $ease;
-}
-
-@mixin background-transparency ($color, $alpha) {
-	$rgba: rgba($color, $alpha);
-	$ie-hex-str: ie-hex-str($rgba);
-	background-color: transparent;
-	background-color: $rgba;
-	filter:progid:DXImageTransform.Microsoft.gradient(startColorstr=#{$ie-hex-str},endColorstr=#{$ie-hex-str});
-	zoom: 1;
-}
+// Use Autoprefixer for vendor prefixes. Autoprefixer comes with the project generator.
