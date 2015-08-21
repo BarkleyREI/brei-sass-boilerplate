@@ -1,13 +1,12 @@
+// Font smoothing only has a webkit or moz prefix so we'll let this slide
+// scss-lint:disable VendorPrefix
+
 body {
 
 	font-size: #{$fontsize}px;
 	line-height: 1.4;
 
 	* {
-		// Allow non-breaking characters to wrap
-		word-break: break-word;
-		word-wrap: break-word;
-
 		// Better defaults for `background` so we can just do background: url(image) and not have to set anything else.
 		background-color: transparent;
 		background-position: top center;
@@ -15,6 +14,10 @@ body {
 
 		// Improve font rendering
 		-webkit-font-smoothing: antialiased;
+
+		// Allow non-breaking characters to wrap
+		word-break: break-word;
+		word-wrap: break-word;
 
 		&,
 		&:before,

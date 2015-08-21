@@ -9,14 +9,14 @@ input[type='search'] {
 
 // Allow only vertical resizing of textareas.
 textarea {
-    resize: vertical;
+	resize: vertical;
 }
 
 // Remove default fieldset styles.
 fieldset {
-    border: 0;
-    margin: 0;
-    padding: 0;
+	border: 0;
+	margin: 0;
+	padding: 0;
 }
 
 // Opinion: Background color to white, and shrink if necessary
@@ -30,10 +30,7 @@ select {
 	background-color: palette('white');
 	max-width: 100%;
 }
-<<<<<<< HEAD
 
 // Opinion: Add some padding around checkboxes and radio buttons
 input[type='radio'],
 input[type='checkbox'] { margin: 0 0.4em; }
-=======
->>>>>>> 6c4a4c35ffa5846b94a4269898943732baf6f577

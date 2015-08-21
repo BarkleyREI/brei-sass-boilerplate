@@ -1,23 +1,18 @@
-<<<<<<< HEAD
-/**
- * Placeholders are extendable blocks of styles
- * that can be used via @extend, with the
- * behavior that there won't be a large
- * mass of classes created in your final CSS
- * document.
- *
- * Use placeholders if you do not need a
- * generic root class to inherit styles from, and
- * just need a grouping of styles to share.
- */
+// Placeholders are extendable blocks of styles
+// that can be used via @extend, with the
+// behavior that there won't be a large
+// mass of classes created in your final CSS
+// document.
+//
+// Use placeholders if you do not need a
+// generic root class to inherit styles from, and
+// just need a grouping of styles to share.
 
-=======
->>>>>>> 6c4a4c35ffa5846b94a4269898943732baf6f577
 %list-reset {
 
+	list-style: none;
 	margin: 0;
 	padding: 0;
-	list-style: none;
 
 }
 
@@ -30,7 +25,3 @@
 	}
 
 }
-<<<<<<< HEAD
-
-=======
->>>>>>> 6c4a4c35ffa5846b94a4269898943732baf6f577
