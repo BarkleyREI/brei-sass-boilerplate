@@ -1,6 +1,25 @@
-@import "variables.scss";
+// Most of the contents of this file are pasted in from other files, so we need to turn off specific lint rules
+// scss-lint:disable SpaceAfterPropertyColon SingleLinePerSelector PropertySortOrder Comment
 
 $icomoon: 'icomoon';
+
+//
+// Replace below with icomoon variables.scss
+//
+
+$icon-search: '\e600';
+$icon-home: '\f015';
+$icon-prev: '\f053';
+$icon-next: '\f054';
+$icon-plus: '\f067';
+$icon-minus: '\f068';
+$icon-twitter: '\f099';
+$icon-facebook: '\f09a';
+$icon-google-plus: '\f0d5';
+$icon-linkedin: '\f0e1';
+$icon-youtube: '\f167';
+$icon-pinterest: '\f231';
+$icon-rss: '\f09e';
 
 //
 // Replace below with icomoon style.css
@@ -18,7 +37,7 @@ $icomoon: 'icomoon';
 	font-style: normal;
 }
 
-[class^="icon-"], [class*=" icon-"] {
+[class^='icon-'], [class*=' icon-'] {
 	font-family: 'icomoon';
 	speak: none;
 	font-style: normal;
@@ -33,41 +52,53 @@ $icomoon: 'icomoon';
 }
 
 .icon-search:before {
-	content: "\e600";
+	content: '\e600';
 }
+
 .icon-home:before {
-	content: "\f015";
+	content: '\f015';
 }
+
 .icon-prev:before {
-	content: "\f053";
+	content: '\f053';
 }
+
 .icon-next:before {
-	content: "\f054";
+	content: '\f054';
 }
+
 .icon-plus:before {
-	content: "\f067";
+	content: '\f067';
 }
+
 .icon-minus:before {
-	content: "\f068";
+	content: '\f068';
 }
+
 .icon-twitter:before {
-	content: "\f099";
+	content: '\f099';
 }
+
 .icon-facebook:before {
-	content: "\f09a";
+	content: '\f09a';
 }
+
 .icon-google-plus:before {
-	content: "\f0d5";
+	content: '\f0d5';
 }
+
 .icon-linkedin:before {
-	content: "\f0e1";
+	content: '\f0e1';
 }
+
 .icon-youtube:before {
-	content: "\f167";
+	content: '\f167';
 }
+
 .icon-pinterest:before {
-	content: "\f231";
+	content: '\f231';
 }
+
 .icon-rss:before {
-	content: "\f09e";
+	content: '\f09e';
 }
