@@ -1,0 +1,9 @@
+// TRANSFORM
+@mixin transform($transform){
+  transition: $transform;
+
+  -webkit-transform: $transform;
+  -moz-transform: $transform;
+  -ms-transform: $transform;
+  -o-transform: $transform;
+}
