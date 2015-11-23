@@ -3,7 +3,7 @@
 @mixin headings($min: 1, $max: 6) {
 
 	@for $i from $min through $max {
-		#{ "h" + $i} {
+		#{ 'h' + $i} {
 			@content;
 		}
 	}
