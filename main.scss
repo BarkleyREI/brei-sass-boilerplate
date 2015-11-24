@@ -1,11 +1,15 @@
 // Vendor reset
+//
+// scss-lint:disable ImportPath
+// Normalize library is not prefixed so we omit the prefix and make a linting exception
+// (this comment is also a required part of the linting)
 @import '../bower_components/foundation-sites/scss/vendor/normalize';
 
 // Foundation utilities
 @import '../bower_components/foundation-sites/scss/util/_util';
 
 // Mixins
-@import 'helpers/_mixins';
+@import 'helpers/mixins/_mixins';
 
 // Overrides
 @import 'helpers/_theme-variables';
