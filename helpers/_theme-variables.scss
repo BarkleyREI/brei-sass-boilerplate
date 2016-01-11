@@ -1,3 +1,10 @@
+// Use this file to store common values like
+// font size, z index, etc.
+
+
+
+// Foundation overrides
+@import 'overrides/_foundation';
 
 // Color palette is a mixin from IBM that
 // lets you organize colors inside a SASS
@@ -8,10 +15,4 @@
 //
 // There are examples of how to use it peppered
 // into some of the default common styles.
-//
-// Use this file to store common values like
-// font size, z index, etc.
-
 @import 'color-palette/_color';
-
-$fontsize: 16;

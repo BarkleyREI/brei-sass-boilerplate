@@ -1,14 +1,14 @@
 {
-  "name": "sass_boilerplate",
-  "version": "1.2.0",
-  "description": "https://github.com/BarkleyREI/sass_boilerplate",
+  "name": "brei-sass-boilerplate",
+  "version": "2.0.0",
+  "description": "https://github.com/BarkleyREI/brei-sass-boilerplate",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/BarkleyREI/sass_boilerplate"
+    "url": "https://github.com/BarkleyREI/brei-sass-boilerplate"
   },
   "author": {
     "name": "Ian Moffitt",
@@ -17,20 +17,30 @@
   },
   "contributors": [
     {
-    "name": "Ian Moffitt",
-    "email": "nessthehero@gmail.com",
-    "url": "https://github.com/nessthehero"
-    }, {
+      "name": "Ian Moffitt",
+      "email": "nessthehero@gmail.com",
+      "url": "https://github.com/nessthehero"
+    },
+    {
       "name": "Ryan Sprake",
       "url": "https://github.com/eightdotthree"
-    }, {
+    },
+    {
       "name": "Joseph Dillon",
       "url": "https://github.com/jdillon522"
+    },
+    {
+      "name": "Sean Stacho",
+      "url": "https://github.com/Sean-BREI"
+    },
+    {
+      "name": "Sarah Harissis",
+      "url": "https://github.com/sharissis"
     }
   ],
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/BarkleyREI/sass_boilerplate/issues"
+    "url": "https://github.com/BarkleyREI/brei-sass-boilerplate/issues"
   },
-  "homepage": "https://github.com/BarkleyREI/sass_boilerplate"
+  "homepage": "https://github.com/BarkleyREI/brei-sass-boilerplate"
 }
