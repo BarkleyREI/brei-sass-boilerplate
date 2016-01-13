@@ -1,26 +1,25 @@
-// Vendor reset
-//
-// scss-lint:disable ImportPath
-// Normalize library is not prefixed so we omit the prefix and make a linting exception
-// (this comment is also a required part of the linting)
-@import '../bower_components/foundation-sites/scss/vendor/normalize';
-
 // Foundation utilities
 @import '../bower_components/foundation-sites/scss/util/_util';
 
-// Mixins
+// Internal Mixins
 @import 'helpers/mixins/_mixins';
 
-// Overrides
-@import 'helpers/_theme-variables';
-
-// Foundation
+// Foundation Global Stuff
 @import '../bower_components/foundation-sites/scss/_global';
 
 // Foundation Components
+// =====================
+//
+// Grid
 @import '../bower_components/foundation-sites/scss/grid/_grid';
+//
+// Typography
 @import '../bower_components/foundation-sites/scss/typography/_typography';
+//
+// Forms
 // @import '../bower_components/foundation-sites/scss/forms/_forms';
+//
+// Components
 @import '../bower_components/foundation-sites/scss/components/_visibility';
 @import '../bower_components/foundation-sites/scss/components/_float';
 // @import '../bower_components/foundation-sites/scss/components/_button';
@@ -53,6 +52,10 @@
 // @import '../bower_components/foundation-sites/scss/components/_thumbnail';
 // @import '../bower_components/foundation-sites/scss/components/_tooltip';
 
+// Overrides
+@import 'helpers/_theme-variables';
+
+// Foundation Componnet mixins
 @include foundation-global-styles;
 @include foundation-grid;
 @include foundation-typography;
