@@ -1,27 +1,34 @@
+$black: #000000;
+$white: #ffffff;
+$sail: #b3d4fc;
+$silver: #cccccc;
+$mineshaft: #333333;
+$deepmineshaft: #222222;
+
 $palettes: (
 	'root': (
-		core: #ffffff,
-		root: #222222,
-		selection: #b3d4fc
+		'core': $white,
+		'root': $deepmineshaft,
+		'selection': $sail
 	),
 	'theme': (
-		core: #333333
+		'core': $mineshaft
 	),
 	'font': (
-		core: #cccccc
+		'core': $silver
 	),
 	'border': (
-		core: #cccccc
+		'core': $silver
 	),
     'module-example': (
-    	core: #cccccc,
-		color: #000000,
-		background: #ffffff
+    	'core': $silver,
+		'color': $black,
+		'background': $white
 	),
 	'black': (
-		core: #000000
+		'core': $black
 	),
 	'white': (
-		core: #ffffff
+		'core': $white
 	)
 );
