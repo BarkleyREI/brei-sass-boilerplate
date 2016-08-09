@@ -2,7 +2,6 @@
   "name": "brei-sass-boilerplate",
   "version": "2.0.4",
   "description": "https://github.com/BarkleyREI/brei-sass-boilerplate",
-  "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
