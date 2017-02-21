@@ -1,13 +1,9 @@
+// scss-lint:disable ImportPath
 @import 'compass';
+// scss-lint:enable ImportPath
 
 // Foundation utilities
 @import '../bower_components/foundation-sites/scss/util/_util';
-
-// Internal Mixins
-@import 'helpers/mixins/_mixins';
-
-// Placeholders
-@import 'helpers/_placeholders';
 
 // Foundation Global Stuff
 @import '../bower_components/foundation-sites/scss/_global';
@@ -59,6 +55,12 @@
 
 // Overrides
 @import 'helpers/_theme-variables';
+
+// Internal Mixins
+@import 'helpers/mixins/_mixins';
+
+// Placeholders
+@import 'helpers/_placeholders';
 
 // Foundation Componnet mixins
 @include foundation-global-styles;
