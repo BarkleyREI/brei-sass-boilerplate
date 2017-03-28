@@ -1,13 +1,10 @@
 ul {
 
-	.content & {
-
+	nav & {
+		@extend %list-reset;
 	}
 }
 
 li {
 
-	.content & {
-
-	}
 }

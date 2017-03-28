@@ -1,4 +1,5 @@
 table {
+	border: 1px solid palette('black');
 
 	tbody {
 
@@ -16,15 +17,10 @@ table {
 
 	}
 
-	&,
 	tbody,
 	tr,
 	th,
 	td {
 		border: 1px solid palette('black');
-	}
-
-	.content & {
-
 	}
 }

@@ -2,7 +2,7 @@ img {
 	max-width: 100%;
 
 	// Opinion: Add padding around WYSIWYG images, and set alignment in CSS for Editors that use attributes.
-	.content & {
+	.user-markup & {
 		padding: 0.5em;
 
 		&[align=left] {
