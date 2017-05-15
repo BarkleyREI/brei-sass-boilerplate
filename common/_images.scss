@@ -5,14 +5,22 @@ img {
 	.user-markup & {
 		padding: 0.5em;
 
+		&[align=left],
+		&[style="float: left;"] {
+			padding: 0.5em 0.5em 0.5em 0;
+		}
+
 		&[align=left] {
 			float: left;
-			padding: 0.5em 0.5em 0.5em 0;
+		}
+
+		&[align=right],
+		&[style="float: right;"] {
+			padding: 0.5em 0 0.5em 0.5em;
 		}
 
 		&[align=right] {
 			float: right;
-			padding: 0.5em 0 0.5em 0.5em;
 		}
 	}
 }
