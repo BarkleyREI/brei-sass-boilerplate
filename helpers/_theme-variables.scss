@@ -14,3 +14,6 @@
 // There are examples of how to use it peppered
 // into some of the default common styles.
 @import 'color-palette/_color';
+
+$transition-time: 0.425s; // Common transition time for hover states, etc.
+$header-breakpoint: 'large'; // Used for consistent mobile to desktop header style switching
