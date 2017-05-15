@@ -1,6 +1,6 @@
 {
   "name": "brei-sass-boilerplate",
-  "version": "2.0.6",
+  "version": "2.0.7",
   "description": "https://github.com/BarkleyREI/brei-sass-boilerplate",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
@@ -34,7 +34,7 @@
     },
     {
       "name": "Sarah Harissis",
-      "url": "https://github.com/sharissis"
+      "url": "https://github.com/sharissis-brei"
     }
   ],
   "license": "MIT",
