@@ -8,3 +8,96 @@ ul {
 li {
 
 }
+
+// Uncomment the code below to enable custom styled ul bullets and ol numbers.
+// Built to support any font size and up to triple digit numbers.
+
+// $list-font-size: 1rem;
+// $ul-bullet-color: $black;
+// $ol-number-color: $black;
+
+// ul,
+// ol {
+
+// 	.user-markup & {
+// 		overflow: hidden;
+// 		margin: 0 0 1em;
+// 		padding: 0 0 0 1.75em; // Space needed for absolutely positioned bullets/numbers
+
+// 		ul,
+// 		ol {
+// 			margin: 0.5em 0 0; // Prevents wonky margins with nested lists
+
+// 			li:last-child {
+// 				margin: 0; // Prevents wonky margins with nested lists
+// 			}
+
+// 		}
+
+// 		&,
+// 		li {
+// 			font-size: $list-font-size;
+// 			list-style: none;
+// 		}
+
+// 		li {
+// 			position: relative;
+// 			margin: 0 0 0.5em;
+
+// 			&:before {
+// 				position: absolute;
+// 			}
+
+// 		}
+
+// 	}
+
+// }
+
+// ul {
+
+// 	.user-markup & {
+
+// 		li {
+
+// 			&:before {
+// 				content: '\2022';
+// 				color: $ul-bullet-color;
+// 				font-size: 1.25em;
+// 				line-height: 1em;
+// 				vertical-align: middle;
+// 				top: 0.1375em;
+// 				left: -1.125em;
+// 			}
+
+// 		}
+
+// 	}
+
+// }
+
+// ol {
+
+// 	.user-markup & {
+// 		counter-reset: itemNum; // Resets count with every new ol
+
+// 		li {
+// 			counter-increment: itemNum;
+
+// 			&:before {
+// 				content: counter(itemNum)'.';
+// 				color: $ol-number-color;
+// 				left: -1.5em;
+// 			}
+
+// 			&:nth-child(n+100) { // Give any number with triple digits extra padding
+// 				padding-left: 0.675em;
+// 			}
+
+// 		}
+
+// 	}
+
+// }
+
+//----- End custom bullets/numbers code -----//
