@@ -3,6 +3,7 @@ ul {
 	nav & {
 		@extend %list-reset;
 	}
+	
 }
 
 li {
@@ -15,6 +16,7 @@ li {
 // $list-font-size: 1rem;
 // $ul-bullet-color: $black;
 // $ol-number-color: $black;
+// $list-item-spacing: 0.5em;
 
 // ul,
 // ol {
@@ -24,12 +26,18 @@ li {
 // 		margin: 0 0 1em;
 // 		padding: 0 0 0 1.75em; // Space needed for absolutely positioned bullets/numbers
 
+// 		&,
 // 		ul,
 // 		ol {
-// 			margin: 0.5em 0 0; // Prevents wonky margins with nested lists
+// 			counter-reset: itemNum; // Resets count with every new ol
+// 		}
 
-// 			li:last-child {
-// 				margin: 0; // Prevents wonky margins with nested lists
+// 		ul,
+// 		ol {
+// 			margin: 0; // Prevents wonky margins with nested lists
+
+// 			li:first-child {
+// 				margin-top: $list-item-spacing;
 // 			}
 
 // 		}
@@ -42,10 +50,14 @@ li {
 
 // 		li {
 // 			position: relative;
-// 			margin: 0 0 0.5em;
+// 			margin-bottom: $list-item-spacing;
 
 // 			&:before {
 // 				position: absolute;
+// 			}
+
+// 			&:last-child {
+// 				margin: 0;
 // 			}
 
 // 		}
@@ -58,7 +70,7 @@ li {
 
 // 	.user-markup & {
 
-// 		li {
+// 		> li {
 
 // 			&:before {
 // 				content: '\2022';
@@ -66,7 +78,6 @@ li {
 // 				font-size: 1.25em;
 // 				line-height: 1em;
 // 				vertical-align: middle;
-// 				top: 0.1375em;
 // 				left: -1.125em;
 // 			}
 
@@ -79,9 +90,8 @@ li {
 // ol {
 
 // 	.user-markup & {
-// 		counter-reset: itemNum; // Resets count with every new ol
 
-// 		li {
+// 		> li {
 // 			counter-increment: itemNum;
 
 // 			&:before {
