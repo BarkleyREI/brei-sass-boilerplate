@@ -35,10 +35,13 @@ li {
 // 		ul,
 // 		ol {
 // 			margin: 0; // Prevents wonky margins with nested lists
-
+			
+// 			// scss-lint:disable SelectorDepth
+// 			// Disabling lint because this is user markup and classes for this likely won't be used -SH
 // 			li:first-child {
 // 				margin-top: $list-item-spacing;
 // 			}
+// 			// scss-lint:enable SelectorDepth
 
 // 		}
 
