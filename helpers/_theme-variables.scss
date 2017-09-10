@@ -4,6 +4,9 @@
 // Foundation overrides
 @import 'overrides/_foundation';
 
+// Global Variables
+$border-color: $silver;
+
 // Color palette is a mixin from IBM that
 // lets you organize colors inside a SASS
 // mapping. I find that it is an easier way
@@ -13,4 +16,10 @@
 //
 // There are examples of how to use it peppered
 // into some of the default common styles.
-@import 'color-palette/_color';
+//
+// DISABLED DUE TO LACK OF USE AND BETTER ALTERNATIVES
+//
+// Use locally scoped variables instead at the top of your component.
+//
+// Uncomment this line if you need the palette helper
+// @import 'color-palette/_color';
