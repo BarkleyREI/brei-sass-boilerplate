@@ -1,5 +1,7 @@
 # SASS Boilerplate
 
+[![Build Status](https://travis-ci.org/BarkleyREI/brei-sass-boilerplate.svg?branch=master)](https://travis-ci.org/BarkleyREI/brei-sass-boilerplate)
+
 https://github.com/BarkleyREI/sass_boilerplate
 
 Do not make direct edits to this repository.
