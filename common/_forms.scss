@@ -1,10 +1,53 @@
+// Opinion: Background color to white, and shrink if necessary
+input[type='text'],
+input[type='password'],
+input[type='date'],
+input[type='datetime'],
+input[type='datetime-local'],
+input[type='month'],
+input[type='week'],
+input[type='email'],
+input[type='number'],
+input[type='search'],
+input[type='tel'],
+input[type='time'],
+input[type='url'],
+input[type='color'],
+textarea,
+select {
+	background-color: palette('white');
+	max-width: 100%;
+
+	&[placeholder],
+	&:placeholder-shown {
+		color: $placeholder-color;
+		line-height: $placeholder-line-height;
+	}
+
+}
+
 // Set word-break back to normal so that text inputs don't wrap
 input[type='text'],
-input[type='email'],
-input[type='url'],
 input[type='password'],
-input[type='search'] {
+input[type='date'],
+input[type='datetime'],
+input[type='datetime-local'],
+input[type='month'],
+input[type='week'],
+input[type='email'],
+input[type='number'],
+input[type='search'],
+input[type='tel'],
+input[type='time'],
+input[type='url'],
+input[type='color'] {
 	word-break: normal;
+}
+
+// Opinion: Add some padding around checkboxes and radio buttons
+input[type='radio'],
+input[type='checkbox'] {
+	margin: 0 0.4em;
 }
 
 // Allow only vertical resizing of textareas.
@@ -19,18 +62,34 @@ fieldset {
 	padding: 0;
 }
 
-// Opinion: Background color to white, and shrink if necessary
-input[type='text'],
-input[type='email'],
-input[type='url'],
-input[type='password'],
-input[type='search'],
-textarea,
-select {
-	background-color: palette('white');
-	max-width: 100%;
+//---------- Placeholder Styles ----------//
+// scss-lint:disable VendorPrefix
+
+::placeholder {
+	color: $placeholder-color;
+	line-height: $placeholder-line-height;
 }
 
-// Opinion: Add some padding around checkboxes and radio buttons
-input[type='radio'],
-input[type='checkbox'] { margin: 0 0.4em; }
+::-webkit-input-placeholder {
+	color: $placeholder-color;
+	line-height: $placeholder-line-height;
+}
+
+:-moz-placeholder {
+	opacity: 1; // FF Fix
+	color: $placeholder-color;
+	line-height: $placeholder-line-height;
+}
+
+::-moz-placeholder {
+	opacity: 1; // FF Fix
+	color: $placeholder-color;
+	line-height: $placeholder-line-height;
+}
+
+:-ms-input-placeholder {  
+	color: $placeholder-color;
+	line-height: $placeholder-line-height;
+}
+
+// scss-lint:enable VendorPrefix

@@ -16,6 +16,7 @@ $border-color: $silver;
 //
 // There are examples of how to use it peppered
 // into some of the default common styles.
+
 //
 // DISABLED DUE TO LACK OF USE AND BETTER ALTERNATIVES
 //
@@ -23,3 +24,8 @@ $border-color: $silver;
 //
 // Uncomment this line if you need the palette helper
 // @import 'color-palette/_color';
+
+$transition-time: 0.425s; // Common transition time for hover states, etc.
+$header-breakpoint: 'large'; // Used for consistent mobile to desktop header style switching
+$placeholder-color: $black;
+$placeholder-line-height: normal;
