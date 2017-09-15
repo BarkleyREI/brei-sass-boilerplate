@@ -15,7 +15,7 @@ input[type='url'],
 input[type='color'],
 textarea,
 select {
-	background-color: palette('white');
+	background-color: $white;
 	max-width: 100%;
 
 	&[placeholder],
@@ -87,7 +87,7 @@ fieldset {
 	line-height: $placeholder-line-height;
 }
 
-:-ms-input-placeholder {  
+:-ms-input-placeholder {
 	color: $placeholder-color;
 	line-height: $placeholder-line-height;
 }
