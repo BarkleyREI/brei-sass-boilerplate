@@ -1,8 +1,9 @@
 # SASS Boilerplate
 
+[![Version npm][version]](http://browsenpm.org/package/brei-sass-boilerplate)
 [![Build Status](https://travis-ci.org/BarkleyREI/brei-sass-boilerplate.svg?branch=master)](https://travis-ci.org/BarkleyREI/brei-sass-boilerplate)
 
-https://github.com/BarkleyREI/sass_boilerplate
+https://github.com/BarkleyREI/brei-sass-boilerplate
 
 Do not make direct edits to this repository.
 
@@ -10,9 +11,9 @@ Fork the repository and make your edits on your copy, then do a pull request on 
 
 ## Contributing
 
-Add mixins to helpers/_mixins.scss
+Add mixins to https://github.com/BarkleyREI/brei-sass-mixins
 
-Add any common QA res CSS you do to common/*.scss
+Add any common QA res CSS you do to common/\*.scss
 
 Don't think these are the limits. If you can think of anything else to include, do it!!
 
@@ -23,11 +24,6 @@ Don't think these are the limits. If you can think of anything else to include, 
 Common QA-fixes and default styles for common elements. This directory is for *global* styles that affect elements on the entire site and are not likely to be overridden.
 
 ### Helpers
-
-#### Color Palette
-Color palette is a mixin from IBM that lets you organize colors inside a SASS mapping. I find that it is an easier way to manage colors rather than a long list of variable names. I highly recommend using it. It's not difficult to use.
-
-There are examples of how to use it peppered into some of the default common styles.
 
 #### Lib
 
