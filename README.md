@@ -3,6 +3,8 @@
 [![Version npm][version]](http://browsenpm.org/package/brei-sass-boilerplate)
 [![Build Status](https://travis-ci.org/BarkleyREI/brei-sass-boilerplate.svg?branch=master)](https://travis-ci.org/BarkleyREI/brei-sass-boilerplate)
 
+[version]: http://img.shields.io/npm/v/brei-sass-boilerplate.svg?style=flat-square
+
 https://github.com/BarkleyREI/brei-sass-boilerplate
 
 Do not make direct edits to this repository.
