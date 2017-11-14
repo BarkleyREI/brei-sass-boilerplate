@@ -15,8 +15,15 @@ input[type='url'],
 input[type='color'],
 textarea,
 select {
-	background-color: palette('white');
+	background-color: $white;
 	max-width: 100%;
+
+	&[placeholder],
+	&:placeholder-shown {
+		color: $placeholder-color;
+		line-height: $placeholder-line-height;
+	}
+
 }
 
 // Set word-break back to normal so that text inputs don't wrap
@@ -57,30 +64,6 @@ fieldset {
 
 //---------- Placeholder Styles ----------//
 // scss-lint:disable VendorPrefix
-input[type='text'],
-input[type='password'],
-input[type='date'],
-input[type='datetime'],
-input[type='datetime-local'],
-input[type='month'],
-input[type='week'],
-input[type='email'],
-input[type='number'],
-input[type='search'],
-input[type='tel'],
-input[type='time'],
-input[type='url'],
-input[type='color'],
-textarea,
-select {
-
-	&[placeholder],
-	&:placeholder-shown {
-		color: $placeholder-color;
-		line-height: $placeholder-line-height;
-	}
-
-}
 
 ::placeholder {
 	color: $placeholder-color;
@@ -104,8 +87,9 @@ select {
 	line-height: $placeholder-line-height;
 }
 
-:-ms-input-placeholder {  
+:-ms-input-placeholder {
 	color: $placeholder-color;
 	line-height: $placeholder-line-height;
 }
+
 // scss-lint:enable VendorPrefix

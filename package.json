@@ -1,9 +1,9 @@
 {
   "name": "brei-sass-boilerplate",
-  "version": "2.0.7",
+  "version": "2.2.1",
   "description": "https://github.com/BarkleyREI/brei-sass-boilerplate",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "scss-lint ."
   },
   "repository": {
     "type": "git",
