@@ -1,5 +1,11 @@
 table {
-	border: 1px solid $black;
+	table-layout: fixed;
+	margin: 0 0 1rem;
+	max-width: 100%;
+
+	.gsc-control-cse & {
+		table-layout: initial; // Shows GCSE tables correctly
+	}
 
 	tbody {
 
@@ -17,10 +23,10 @@ table {
 
 	}
 
-	tbody,
-	tr,
-	th,
-	td {
-		border: 1px solid $black;
-	}
+}
+
+.table-wrapper { // Wrapping tables in this will allow them to scroll horizontally if too wide
+	overflow: hidden;
+	overflow-x: auto;
+	max-width: 100%;
 }
