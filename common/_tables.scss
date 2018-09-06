@@ -1,5 +1,9 @@
 table {
+
 	// Global table styles
+	.gsc-control-cse & {
+		table-layout: initial; // Shows GCSE tables correctly
+	}
 
 	.user-markup & {
 		// WYSIWYG table styles
@@ -28,4 +32,10 @@ table {
 		}
 
 	}
+}
+
+.table-wrapper { // Wrapping tables in this will allow them to scroll horizontally if too wide
+	overflow: hidden;
+	overflow-x: auto;
+	max-width: 100%;
 }

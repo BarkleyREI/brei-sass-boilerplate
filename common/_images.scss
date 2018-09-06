@@ -1,28 +1,35 @@
 img {
 	max-width: 100%;
 
-	// Opinion: Add padding around WYSIWYG images, and set alignment in CSS for Editors that use attributes.
 	.user-markup & {
-		padding: 0.5em;
-
-		&[align=left],
-		&[style*="float: left;"] {
-			padding: 0.5em 0.5em 0.5em 0;
-		}
-
-		&[align=left] {
-			float: left;
-		}
+		margin: 0.375em 0.75em 1.5em 0;
 
 		&[align=right],
-		&[style*="float: right;"] {
-			padding: 0.5em 0 0.5em 0.5em;
+		&[style*="float: right"] {
+			margin: 0.375em 0 1.5em 0.75em;
 		}
 
 		&[align=right] {
 			float: right;
 		}
+
 	}
+
+	.user-markup p & {
+		float: left;
+
+		&,
+		&[align=right],
+		&[style*="float: right"] {
+			margin-bottom: 0.375em;
+		}
+
+		&[align=right] {
+			float: right;
+		}
+
+	}
+	
 }
 
 // Used for elements that mimic the img tag
