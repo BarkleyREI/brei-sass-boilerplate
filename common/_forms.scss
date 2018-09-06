@@ -133,7 +133,6 @@ fieldset {
 
 //---------- Placeholder Styles ----------//
 // scss-lint:disable VendorPrefix
-
 ::placeholder {
 	color: $placeholder-color;
 }
@@ -155,5 +154,6 @@ fieldset {
 :-ms-input-placeholder {
 	color: $placeholder-color;
 }
-
 // scss-lint:enable VendorPrefix
+
+// Add custom generic form styles here
