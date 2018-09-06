@@ -64,7 +64,6 @@ fieldset {
 
 //---------- Placeholder Styles ----------//
 // scss-lint:disable VendorPrefix
-
 ::placeholder {
 	color: $placeholder-color;
 	line-height: $placeholder-line-height;
@@ -91,5 +90,6 @@ fieldset {
 	color: $placeholder-color;
 	line-height: $placeholder-line-height;
 }
-
 // scss-lint:enable VendorPrefix
+
+// Add custom generic form styles here

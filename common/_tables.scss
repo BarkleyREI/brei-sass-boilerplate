@@ -1,26 +1,31 @@
 table {
-	border: 1px solid $black;
+	// Global table styles
 
-	tbody {
+	.user-markup & {
+		// WYSIWYG table styles
 
-	}
+		tbody {
 
-	tr {
+		}
 
-	}
+		tr {
 
-	td {
+		}
 
-	}
+		td {
 
-	th {
+		}
 
-	}
+		th {
 
-	tbody,
-	tr,
-	th,
-	td {
-		border: 1px solid $black;
+		}
+
+		tbody,
+		tr,
+		th,
+		td {
+
+		}
+
 	}
 }
