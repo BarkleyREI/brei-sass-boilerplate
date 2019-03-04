@@ -16,7 +16,6 @@
 	li {
 		list-style: none;
 	}
-
 }
 
 %inline-list {
@@ -25,7 +24,6 @@
 	li {
 		display: inline-block;
 	}
-
 }
 
 %overlay {
@@ -40,11 +38,9 @@
 
 // Maintains 1:1 image proportions. Works best when direct child uses %overlay.
 %square-scale {
-
 	&:before {
 		content: '';
 		padding-top: 100%;
 		display: block;
 	}
-
 }

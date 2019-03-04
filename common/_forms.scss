@@ -43,17 +43,16 @@ label {
 	display: inline-block;
 	margin-bottom: rem-calc(10);
 
-	+ input[type="checkbox"],
-	+ input[type="radio"] {
+	+ input[type='checkbox'],
+	+ input[type='radio'] {
 		opacity: 1;
 		position: static;
 		left: auto;
 	}
-
 }
 
-input[type="checkbox"],
-input[type="radio"] {
+input[type='checkbox'],
+input[type='radio'] {
 	opacity: 0;
 	position: absolute;
 	left: -9999px;
@@ -64,7 +63,6 @@ input[type="radio"] {
 		&:after {
 			opacity: 1;
 		}
-
 	}
 
 	+ label {
@@ -100,22 +98,18 @@ input[type="radio"] {
 			top: rem-calc(5);
 			left: rem-calc(5);
 		}
-
 	}
 
 	&:hover + label {
 		color: $black;
 	}
-
 }
 
-input[type="radio"] + label {
-
+input[type='radio'] + label {
 	&:before,
 	&:after {
 		border-radius: $radio-checkbox-size;
 	}
-
 }
 
 // Allow only vertical resizing of textareas.
@@ -131,7 +125,7 @@ fieldset {
 	min-width: initial; // Fixes a couple browser width bugs
 }
 
-//---------- Placeholder Styles ----------//
+// ---------- Placeholder Styles ---------- //
 // scss-lint:disable VendorPrefix
 ::placeholder {
 	color: $placeholder-color;
