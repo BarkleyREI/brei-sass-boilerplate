@@ -49,5 +49,8 @@
 		"stylelint-scss": "3.4.0",
 		"stylelint-selector-bem-pattern": "2.0.0",
 		"brei-util": "^1.0.1"
+	},
+	"dependencies": {
+		"foundation-sites": "^6.5.3"
 	}
 }
