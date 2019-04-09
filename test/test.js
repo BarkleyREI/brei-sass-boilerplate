@@ -20,6 +20,7 @@ let valid = [
 	'.stylelintrc.json',
 	'.travis.yml',
 	'README.md',
+	'_settings.scss',
 	{
 		common: [
 			'_body.scss',
