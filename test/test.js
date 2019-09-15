@@ -22,6 +22,11 @@ let valid = [
 	'README.md',
 	'_settings.scss',
 	{
+		atoms: [
+			'_assemble-atoms.scss'
+		]
+	},
+	{
 		common: [
 			'_body.scss',
 			'_defaults.scss',
@@ -29,6 +34,7 @@ let valid = [
 			'_headings.scss',
 			'_hr.scss',
 			'_images.scss',
+			'_index.scss',
 			'_links.scss',
 			'_lists.scss',
 			'_selection.scss',
@@ -49,11 +55,6 @@ let valid = [
 				mixins: [
 					'_mixins.scss'
 				]
-			},
-			{
-				overrides: [
-					'_foundation.scss'
-				]
 			}
 		]
 	},
@@ -69,16 +70,16 @@ let valid = [
 	},
 	'main.scss',
 	{
-		modules: [
-			'_assemble-modules.scss'
+		molecules: [
+			'_assemble-molecules.scss'
+		]
+	},
+	{
+		organisms: [
+			'_assemble-organisms.scss'
 		]
 	},
 	'package.json',
-	{
-		partials: [
-			'_assemble-partials.scss'
-		]
-	},
 	{
 		templates: [
 			'_assemble-templates.scss'
