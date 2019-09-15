@@ -21,6 +21,7 @@ let valid = [
 	'.travis.yml',
 	'README.md',
 	'_settings.scss',
+	'_theme.scss',
 	{
 		atoms: [
 			'_assemble-atoms.scss'
@@ -44,7 +45,6 @@ let valid = [
 	{
 		helpers: [
 			'_placeholders.scss',
-			'_theme-variables.scss',
 			'_user-markup.scss',
 			{
 				lib: [
