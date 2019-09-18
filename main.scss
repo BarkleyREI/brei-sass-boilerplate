@@ -1,4 +1,4 @@
-@import 'settings';
+@import '_settings';
 @import 'foundation';
 
 // Global styles
@@ -59,7 +59,7 @@
 // @include foundation-prototype-classes ();
 
 // Overrides
-@import 'theme';
+@import '_theme';
 
 // Internal Mixins
 @import 'helpers/mixins/_mixins';
