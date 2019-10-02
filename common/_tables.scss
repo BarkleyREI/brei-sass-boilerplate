@@ -30,12 +30,11 @@ table {
 		td {
 
 		}
-
 	}
 }
 
 .table-wrapper { // Wrapping tables in this will allow them to scroll horizontally if too wide
+	max-width: 100%;
 	overflow: hidden;
 	overflow-x: auto;
-	max-width: 100%;
 }

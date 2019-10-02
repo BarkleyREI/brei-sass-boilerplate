@@ -43,20 +43,19 @@ label {
 	display: inline-block;
 	margin-bottom: rem-calc(10);
 
-	+ input[type="checkbox"],
-	+ input[type="radio"] {
+	+ input[type='checkbox'],
+	+ input[type='radio'] {
+		left: auto;
 		opacity: 1;
 		position: static;
-		left: auto;
 	}
-
 }
 
-input[type="checkbox"],
-input[type="radio"] {
+input[type='checkbox'],
+input[type='radio'] {
+	left: -9999px;
 	opacity: 0;
 	position: absolute;
-	left: -9999px;
 
 	&:checked + label {
 		color: $black;
@@ -64,16 +63,15 @@ input[type="radio"] {
 		&:after {
 			opacity: 1;
 		}
-
 	}
 
 	+ label {
+		color: $black;
 		font-weight: 400;
-		position: relative;
+		min-height: $radio-checkbox-size;
 		padding-left: $radio-checkbox-size + rem-calc(10);
 		padding-top: 0.275em;
-		min-height: $radio-checkbox-size;
-		color: $black;
+		position: relative;
 		transition: color 0.4s;
 
 		&:before,
@@ -85,37 +83,33 @@ input[type="radio"] {
 
 		&:before {
 			border: 2px solid $black;
-			width: $radio-checkbox-size;
 			height: $radio-checkbox-size;
-			top: 0;
 			left: 0;
+			top: 0;
+			width: $radio-checkbox-size;
 		}
 
 		&:after {
-			opacity: 0;
-			transition: opacity $transition-time;
 			background-color: $black;
-			width: $radio-checkbox-size - rem-calc(10);
 			height: $radio-checkbox-size - rem-calc(10);
-			top: rem-calc(5);
 			left: rem-calc(5);
+			opacity: 0;
+			top: rem-calc(5);
+			transition: opacity $transition-time;
+			width: $radio-checkbox-size - rem-calc(10);
 		}
-
 	}
 
 	&:hover + label {
 		color: $black;
 	}
-
 }
 
-input[type="radio"] + label {
-
+input[type='radio'] + label {
 	&:before,
 	&:after {
 		border-radius: $radio-checkbox-size;
 	}
-
 }
 
 // Allow only vertical resizing of textareas.
@@ -127,11 +121,11 @@ textarea {
 fieldset {
 	border: 0;
 	margin: 0;
-	padding: 0;
 	min-width: initial; // Fixes a couple browser width bugs
+	padding: 0;
 }
 
-//---------- Placeholder Styles ----------//
+// ---------- Placeholder Styles ---------- //
 // scss-lint:disable VendorPrefix
 ::placeholder {
 	color: $placeholder-color;
@@ -142,13 +136,13 @@ fieldset {
 }
 
 :-moz-placeholder {
-	opacity: 1; // FF Fix
 	color: $placeholder-color;
+	opacity: 1; // FF Fix
 }
 
 ::-moz-placeholder {
-	opacity: 1; // FF Fix
 	color: $placeholder-color;
+	opacity: 1; // FF Fix
 }
 
 :-ms-input-placeholder {
