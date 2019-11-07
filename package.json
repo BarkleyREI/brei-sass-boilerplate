@@ -1,6 +1,6 @@
 {
 	"name": "brei-sass-boilerplate",
-	"version": "3.0.0",
+	"version": "3.0.1",
 	"description": "https://github.com/BarkleyREI/brei-sass-boilerplate",
 	"scripts": {
 		"test": "mocha && stylelint \"./**/*.scss\" --config ./.stylelintrc.json --ignore-path ./.stylelintignore",
