@@ -1,7 +1,7 @@
 # SASS Boilerplate
 
 [![Version npm][version]](http://browsenpm.org/package/brei-sass-boilerplate)
-[![Build Status](https://travis-ci.org/BarkleyREI/brei-sass-boilerplate.svg?branch=master)](https://travis-ci.org/BarkleyREI/brei-sass-boilerplate) [![Greenkeeper badge](https://badges.greenkeeper.io/BarkleyREI/brei-sass-boilerplate.svg)](https://greenkeeper.io/)
+[![Build Status](https://travis-ci.org/BarkleyREI/brei-sass-boilerplate.svg?branch=master)](https://travis-ci.org/BarkleyREI/brei-sass-boilerplate) 
 
 [version]: http://img.shields.io/npm/v/brei-sass-boilerplate.svg?style=flat-square
 
