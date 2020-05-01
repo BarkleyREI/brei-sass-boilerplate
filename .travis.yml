@@ -8,12 +8,6 @@ node_js:
   - 'node'
 before_script:
   - gem install scss_lint
-install:
-  - npm ci
-# keep the npm cache around to speed up installs
-cache:
-  directories:
-    - "$HOME/.npm"
 deploy:
   provider: npm
   email: nessthehero@gmail.com
