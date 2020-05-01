@@ -6,8 +6,6 @@ node_js:
   - '13'
   - 'lts/*'
   - 'node'
-before_script:
-  - gem install scss_lint
 deploy:
   provider: npm
   email: nessthehero@gmail.com
