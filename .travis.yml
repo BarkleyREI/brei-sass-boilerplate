@@ -1,16 +1,17 @@
 language: node_js
 node_js:
-  - '10'
-  - '11'
-  - '12'
-  - '13'
-  - 'lts/*'
-  - 'node'
+- '10'
+- '11'
+- '12'
+- '13'
+- lts/*
+- node
 deploy:
   provider: npm
   email: nessthehero@gmail.com
   api_key:
-    secure: iSXsx0lctUfxVvwxTdpcYlo/QLIDmky6zC3ZeE5Gi/XHFwDLidC4iM0rOpnTgcS83Wt+xkAZ9GwvKi5XpQARSspeaDnvwOQxUTCOeTSuYiepfDbuEtqSFdD6k85PH4EeqJpr0eeZ1Is1E1PT1pLDfLEG+AS/AeCqX1FIPGzG478=
+    secure: D35Dkhn5yKOJR//JOvGeVYbYBNPwtSpp9ZXojSe8xIlTTIS3SRh5VKPKc3J5SfqA1dJzdjpzbN7nciEHW7Y2cEgzSPp3AQh9Lzkit/ilburPgLaHKqCmv4x8Ef5LreF4NX2kmOoBnmcobGe84uu/I+Il4bwK2hMKf71Nq+5yVTI=
   on:
     tags: true
     repo: BarkleyREI/brei-sass-boilerplate
+  skip_cleanup: 'true'
