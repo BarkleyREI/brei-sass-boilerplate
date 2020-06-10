@@ -1,10 +1,11 @@
 {
 	"name": "brei-sass-boilerplate",
-	"version": "3.0.6",
+	"version": "3.0.7",
 	"description": "https://github.com/BarkleyREI/brei-sass-boilerplate",
 	"scripts": {
-		"test": "mocha && stylelint \"./**/*.scss\" --config ./.stylelintrc.json --ignore-path ./.stylelintignore",
-		"postinstall": "npm test"
+		"test": "mocha",
+		"lint": "npx stylelint \"./**/*.scss\" --config ./.stylelintrc.json --ignore-path ./.stylelintignore",
+		"postinstall": "npm test && npm run lint"
 	},
 	"repository": {
 		"type": "git",
