@@ -1,61 +1,61 @@
 {
-  "name": "brei-sass-boilerplate",
-  "version": "3.0.8",
-  "description": "https://github.com/BarkleyREI/brei-sass-boilerplate",
-  "scripts": {
-    "test": "mocha",
-    "lint": "stylelint \"./**/*.scss\" --config ./.stylelintrc.json --ignore-path ./.stylelintignore",
-    "postinstall": "npm test && npm run lint",
-    "snyk-protect": "snyk protect",
-    "prepublish": "npm run snyk-protect"
-  },
-  "repository": {
-    "type": "git",
-    "url": "https://github.com/BarkleyREI/brei-sass-boilerplate"
-  },
-  "author": {
-    "name": "Ian Moffitt",
-    "email": "nessthehero@gmail.com",
-    "url": "https://github.com/nessthehero"
-  },
-  "contributors": [
-    {
-      "name": "Ian Moffitt",
-      "email": "nessthehero@gmail.com",
-      "url": "https://github.com/nessthehero"
-    },
-    {
-      "name": "Ryan Sprake",
-      "url": "https://github.com/eightdotthree"
-    },
-    {
-      "name": "Joseph Dillon",
-      "url": "https://github.com/jdillon522"
-    },
-    {
-      "name": "Sean Stacho",
-      "url": "https://github.com/Sean-BREI"
-    },
-    {
-      "name": "Sarah Harissis",
-      "url": "https://github.com/sharissis-brei"
-    }
-  ],
-  "license": "MIT",
-  "bugs": {
-    "url": "https://github.com/BarkleyREI/brei-sass-boilerplate/issues"
-  },
-  "homepage": "https://github.com/BarkleyREI/brei-sass-boilerplate",
-  "devDependencies": {
-    "mocha": "~7.1.0",
-    "brei-util": "^1.0.6"
-  },
-  "dependencies": {
-    "foundation-sites": "~6.6.2",
-    "stylelint": "~13.2.0",
-    "stylelint-scss": "~3.14.2",
-    "stylelint-selector-bem-pattern": "~2.1.0",
-    "snyk": "^1.338.0"
-  },
-  "snyk": true
+	"name": "brei-sass-boilerplate",
+	"version": "3.0.8",
+	"description": "https://github.com/BarkleyREI/brei-sass-boilerplate",
+	"scripts": {
+		"test": "mocha",
+		"lint": "stylelint \"./**/*.scss\" --config ./.stylelintrc.json --ignore-path ./.stylelintignore",
+		"postinstall": "npm test && npm run lint",
+		"snyk-protect": "snyk protect",
+		"prepublish": "npm run snyk-protect"
+	},
+	"repository": {
+		"type": "git",
+		"url": "https://github.com/BarkleyREI/brei-sass-boilerplate"
+	},
+	"author": {
+		"name": "Ian Moffitt",
+		"email": "nessthehero@gmail.com",
+		"url": "https://github.com/nessthehero"
+	},
+	"contributors": [
+		{
+			"name": "Ian Moffitt",
+			"email": "nessthehero@gmail.com",
+			"url": "https://github.com/nessthehero"
+		},
+		{
+			"name": "Ryan Sprake",
+			"url": "https://github.com/eightdotthree"
+		},
+		{
+			"name": "Joseph Dillon",
+			"url": "https://github.com/jdillon522"
+		},
+		{
+			"name": "Sean Stacho",
+			"url": "https://github.com/Sean-BREI"
+		},
+		{
+			"name": "Sarah Harissis",
+			"url": "https://github.com/sharissis-brei"
+		}
+	],
+	"license": "MIT",
+	"bugs": {
+		"url": "https://github.com/BarkleyREI/brei-sass-boilerplate/issues"
+	},
+	"homepage": "https://github.com/BarkleyREI/brei-sass-boilerplate",
+	"devDependencies": {
+		"mocha": "~7.1.0",
+		"brei-util": "^1.0.6"
+	},
+	"dependencies": {
+		"foundation-sites": "~6.6.2",
+		"stylelint": "~13.6.0",
+		"stylelint-scss": "~3.14.2",
+		"stylelint-selector-bem-pattern": "~2.1.0",
+		"snyk": "^1.338.0"
+	},
+	"snyk": true
 }
