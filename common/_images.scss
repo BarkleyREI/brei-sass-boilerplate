@@ -12,19 +12,26 @@ img {
 		&[align='right'] {
 			float: right;
 		}
+
+		&[align='left'],
+		&[style*='float: left'] {
+			margin: 0.375em 1.5em 0.75em 0;
+		}
+
+		&[align='left'] {
+			float: left;
+		}
 	}
 
 	.user-markup p & {
-		float: left;
-
-		&,
-		&[align='right'],
-		&[style*='float: right'] {
-			margin-bottom: 0.375em;
-		}
+		margin-bottom: 0.375em;
 
 		&[align='right'] {
 			float: right;
+		}
+
+		&[align='left'] {
+			float: left;
 		}
 	}
 }
