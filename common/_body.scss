@@ -1,10 +1,10 @@
 body {
-	overflow-x: hidden; // Prevents horizontal scroll bug that occurs a lot in IE
+	overflow-x: hidden; // Prevents horizontal scroll bug
 
 	* {
-
 		// Box Sixing
 		box-sizing: border-box;
+
 		// Allow non-breaking characters to wrap
 		word-break: break-word;
 		word-wrap: break-word;

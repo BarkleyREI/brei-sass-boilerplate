@@ -1,6 +1,9 @@
 @import '_settings';
 @import 'foundation';
 
+// Overrides
+@import '_theme';
+
 // Global styles
 @include foundation-global-styles ();
 // @include foundation-forms ();
@@ -57,9 +60,6 @@
 // @include foundation-flex-classes ();
 @include foundation-visibility-classes ();
 // @include foundation-prototype-classes ();
-
-// Overrides
-@import '_theme';
 
 // Internal Mixins
 @import 'helpers/mixins/_mixins';

@@ -1,6 +1,6 @@
 {
 	"name": "brei-sass-boilerplate",
-	"version": "3.0.11",
+	"version": "3.0.12",
 	"description": "https://github.com/BarkleyREI/brei-sass-boilerplate",
 	"scripts": {
 		"test": "mocha",
@@ -47,15 +47,15 @@
 	},
 	"homepage": "https://github.com/BarkleyREI/brei-sass-boilerplate",
 	"devDependencies": {
-		"mocha": "~7.1.0",
-		"brei-util": "^1.0.6"
+		"brei-util": "^1.0.6",
+		"mocha": "~7.1.0"
 	},
 	"dependencies": {
 		"foundation-sites": "~6.6.2",
-		"stylelint": "~13.6.0",
+		"snyk": "^1.338.0",
+		"stylelint": "~13.9.0",
 		"stylelint-scss": "~3.18.0",
-		"stylelint-selector-bem-pattern": "~2.1.0",
-		"snyk": "^1.338.0"
+		"stylelint-selector-bem-pattern": "~2.1.0"
 	},
 	"snyk": true
 }
