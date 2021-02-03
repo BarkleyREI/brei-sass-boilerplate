@@ -43,12 +43,13 @@ h6 {
 }
 
 // Mixin that applies Foundation heading styles to heading classes dynamically
+// .h1, .h2, .h3, ... etc
 @each $size, $headers in $header-styles {
 	@each $header, $font-size in $headers {
 		%#{$header},
 		.#{$header} {
 			@include breakpoint($size) {
-				font-size: rem-calc(map-deep-get($header-styles, $size, $header, 'font-size'));
+				font-size: map-deep-get($header-styles, $size, $header, 'font-size');
 			}
 		}
 	}

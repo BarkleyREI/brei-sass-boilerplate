@@ -21,6 +21,10 @@ Don't think these are the limits. If you can think of anything else to include, 
 
 ## Contents
 
+### Atoms
+
+Smallest elements or patterns.
+
 ### Common
 
 Common QA-fixes and default styles for common elements. This directory is for *global* styles that affect elements on the entire site and are not likely to be overridden.
@@ -39,21 +43,13 @@ Please also make use of Foundation mixins whenever possible.
 
 This directory is managed at https://github.com/BarkleyREI/brei-sass-mixins
 
-#### Overrides
-
-Foundation and other library overrides
-
-#### Access
-
-Accessibility classes
-
-#### Theme Variables
-
-Use this file to store common values like font size, z index, etc.
-
 #### Placeholders
 
 Placeholders are for extending styles without adding unwanted class names to the css file. Styles can be shared across multiple tags without weird grouping in the compiled CSS.
+
+#### User Markup
+
+WYSIWYG styles that affect content that a user can create in a CMS.
 
 ### Icons
 
@@ -63,14 +59,14 @@ Icon fonts and SVG
 
 Place layout based SCSS files here. A layout should only be positioning or context specific styles for a very specific situation.
 
-### Modules
+### Organisms
 
-Modules are multi-use components of the site that can appear one or more times.
+Organisms are multi-use components of the site that can appear one or more times.
 
-### Partials
+### Molecules
 
-Partials are smaller multi-use components that often are smaller pieces of modules, and are generally not found by themselves.
+Molecules are smaller multi-use components that often are smaller pieces of organisms, and are generally not found by themselves.
 
-### Print
+### Templates
 
-Print styles. Print styles are important. Do not forget to write print styles.
+Template specific styles.

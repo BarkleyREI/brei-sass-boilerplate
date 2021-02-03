@@ -2,11 +2,11 @@ img {
 	max-width: 100%;
 
 	.user-markup & {
-		margin: 0.375em 0.75em 1.5em 0;
+		margin: 6px 12px 24px 0;
 
 		&[align='right'],
 		&[style*='float: right'] {
-			margin: 0.375em 0 1.5em 0.75em;
+			margin: 6px 0 24px 12px;
 		}
 
 		&[align='right'] {
@@ -15,7 +15,7 @@ img {
 
 		&[align='left'],
 		&[style*='float: left'] {
-			margin: 0.375em 1.5em 0.75em 0;
+			margin: 6px 24px 12px 0;
 		}
 
 		&[align='left'] {
@@ -24,7 +24,7 @@ img {
 	}
 
 	.user-markup p & {
-		margin-bottom: 0.375em;
+		margin-bottom: 6px;
 
 		&[align='right'] {
 			float: right;
