@@ -54,7 +54,7 @@
 		"foundation-sites": "~6.6.2",
 		"snyk": "^1.338.0",
 		"stylelint": "~13.9.0",
-		"stylelint-scss": "~3.18.0",
+		"stylelint-scss": "~3.19.0",
 		"stylelint-selector-bem-pattern": "~2.1.0"
 	},
 	"snyk": true
