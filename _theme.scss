@@ -33,36 +33,36 @@ $desktop-sidebar-component-spacing: 32px;
 // Foundation overrides from standards
 $global-width: 1712px; // 1920 viewport with 5% padding on either side
 $breakpoints: (
-		xsmall: 0,
-		small: 400px,
-		medium: 768px,
-		large: 1024px,
-		xlarge: 1280px,
-		xxlarge: 1440px,
-		xxxlarge: 1920px
+	xsmall: 0,
+	small: 400px,
+	medium: 768px,
+	large: 1024px,
+	xlarge: 1280px,
+	xxlarge: 1440px,
+	xxxlarge: 1920px
 );
 $grid-row-width: $global-width;
 $grid-column-count: 12;
 $grid-column-gutter: (
-		xsmall: 16px,
-		medium: 16px,
+	xsmall: 16px,
+	medium: 16px,
 );
 $header-styles: (
-		xsmall: (
-				'h1': ('font-size': 48),
-				'h2': ('font-size': 42),
-				'h3': ('font-size': 38),
-				'h4': ('font-size': 32),
-				'h5': ('font-size': 28),
-				'h6': ('font-size': 24),
-		),
-		large: (
-				'h1': ('font-size': 72),
-				'h2': ('font-size': 64),
-				'h3': ('font-size': 56),
-				'h4': ('font-size': 48),
-				'h5': ('font-size': 40),
-				'h6': ('font-size': 32),
-		),
+	xsmall: (
+		'h1': ('font-size': 48),
+		'h2': ('font-size': 42),
+		'h3': ('font-size': 38),
+		'h4': ('font-size': 32),
+		'h5': ('font-size': 28),
+		'h6': ('font-size': 24),
+	),
+	large: (
+		'h1': ('font-size': 72),
+		'h2': ('font-size': 64),
+		'h3': ('font-size': 56),
+		'h4': ('font-size': 48),
+		'h5': ('font-size': 40),
+		'h6': ('font-size': 32),
+	),
 );
 $breakpoint-classes: (xsmall small medium large);
