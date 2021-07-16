@@ -2,7 +2,7 @@ a {
 	text-decoration: none;
 
 	.user-markup &:not([class]) {
-		@extend %default-link;
+		@extend %default-link !optional;
 	}
 }
 
