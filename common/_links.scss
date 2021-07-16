@@ -1,9 +1,12 @@
-// Opinion: No underlines on links, but always underlines on hover (ian)
+%default-link {
+
+}
+
 a {
 	text-decoration: none;
 
-	&:hover,
-	&:focus {
-		text-decoration: underline;
+	// Standard links inside a WYSIWYG that don't have a class
+	.user-markup &:not([class]) {
+		@extend %default-link !optional;
 	}
 }
