@@ -49,7 +49,7 @@
 	"devDependencies": {},
 	"dependencies": {
 		"brei-util": "^1.0.0",
-		"foundation-sites": "~6.6.2",
+		"foundation-sites": "~6.7.0",
 		"mocha": "~7.1.0",
 		"snyk": "^1.338.0",
 		"stylelint": "~13.9.0",
