@@ -5,6 +5,7 @@
 const stylelint = require('stylelint');
 const styleLintFormatter = require('stylelint-formatter-pretty');
 const assert = require('assert');
+const path = require('path');
 
 let lintResults = {};
 
@@ -14,7 +15,7 @@ describe('brei-sass-boilerplate -- Test (test/test.js)', function () {
 			configFile: './.stylelintrc.json',
 			ignorePath: './.stylelintignore',
 			formatter: styleLintFormatter,
-			files: './**/*.scss'
+			files: path.join(__dirname, '../**/*.scss')
 		}).then(function (data) {
 			lintResults = data;
 			done();
