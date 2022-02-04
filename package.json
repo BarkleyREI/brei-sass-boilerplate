@@ -4,7 +4,7 @@
 	"description": "https://github.com/BarkleyREI/brei-sass-boilerplate",
 	"scripts": {
 		"test": "mocha",
-		"lint": "pwd && stylelint \"./**/*.scss\" --config ./.stylelintrc.json --ignore-path ./.stylelintignore",
+		"lint": "pwd && stylelint \"**/*.scss\" --config ./.stylelintrc.json --ignore-path ./.stylelintignore",
 		"postinstall": "npm test && npm run lint",
 		"snyk-protect": "snyk protect",
 		"prepublish": "npm run snyk-protect"
