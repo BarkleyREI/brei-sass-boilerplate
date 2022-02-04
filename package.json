@@ -4,8 +4,7 @@
 	"description": "https://github.com/BarkleyREI/brei-sass-boilerplate",
 	"scripts": {
 		"test": "mocha",
-		"lint": "pwd && stylelint \"**/*.scss\" --config ./.stylelintrc.json --ignore-path ./.stylelintignore",
-		"postinstall": "npm test && npm run lint",
+		"postinstall": "npm test",
 		"snyk-protect": "snyk protect",
 		"prepublish": "npm run snyk-protect"
 	},
@@ -47,11 +46,11 @@
 	},
 	"homepage": "https://github.com/BarkleyREI/brei-sass-boilerplate",
 	"devDependencies": {
+		"mocha": "~9.2.0",
 		"postcss-scss": "~4.0.3",
 		"stylelint": "~14.3.0",
-		"stylelint-scss": "~4.1.0",
-		"stylelint-selector-bem-pattern": "~2.1.1",
-		"mocha": "~9.2.0"
+		"stylelint-formatter-pretty": "^3.1.0",
+		"stylelint-scss": "~4.1.0"
 	},
 	"dependencies": {
 		"brei-util": "^1.0.9",
