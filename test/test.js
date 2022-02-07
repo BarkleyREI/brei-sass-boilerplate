@@ -8,7 +8,8 @@ const assert = require('assert');
 const path = require('path');
 const glob = require('glob');
 
-const scssGlob = path.join(__dirname, '../**/*.scss');
+const scssPath = path.join(__dirname, '../');
+const scssGlob = path.join(scssPath, '/**/*.scss');
 
 let lintResults = {};
 let scssFiles = [];
@@ -43,7 +44,8 @@ describe('brei-sass-boilerplate -- Test (test/test.js)', function () {
 			configFile: './.stylelintrc.json',
 			ignorePath: './.stylelintignore',
 			formatter: styleLintFormatter,
-			files: scssFiles
+			files: scssGlob,
+			cwd: scssPath
 		}).then(function (data) {
 			console.log(data);
 			lintResults = data;
