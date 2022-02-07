@@ -1,6 +1,6 @@
 {
 	"name": "brei-sass-boilerplate",
-	"version": "3.0.17",
+	"version": "3.1.0",
 	"description": "https://github.com/BarkleyREI/brei-sass-boilerplate",
 	"scripts": {
 		"test": "mocha",
