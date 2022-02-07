@@ -6,8 +6,30 @@ const stylelint = require('stylelint');
 const styleLintFormatter = require('stylelint-formatter-pretty');
 const assert = require('assert');
 const path = require('path');
+const glob = require('glob');
+
+const scssGlob = path.join(__dirname, '../**/*.scss');
 
 let lintResults = {};
+let scssFiles = [];
+
+describe('brei-sass-boilerplate -- verify that files exist in this package -- Test (test/test.js)', function () {
+
+	before(function (done) {
+
+		glob(scssGlob, {}, function (er, files) {
+			scssFiles = files;
+			console.log(scssFiles);
+
+			done();
+		});
+
+	});
+	it('SCSS Files detected', function () {
+		assert.notEqual(scssFiles.length, 0);
+	});
+
+});
 
 describe('brei-sass-boilerplate -- Test (test/test.js)', function () {
 	before(function (done) {
