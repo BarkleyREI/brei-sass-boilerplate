@@ -33,11 +33,17 @@ describe('brei-sass-boilerplate -- verify that files exist in this package -- Te
 
 describe('brei-sass-boilerplate -- Test (test/test.js)', function () {
 	before(function (done) {
+
+		console.log('--- before ---');
+		console.log(scssGlob);
+		console.log(scssFiles);
+		console.log('--- before ---');
+		
 		stylelint.lint({
 			configFile: './.stylelintrc.json',
 			ignorePath: './.stylelintignore',
 			formatter: styleLintFormatter,
-			files: path.join(__dirname, '../**/*.scss')
+			files: scssGlob
 		}).then(function (data) {
 			console.log(data);
 			lintResults = data;
