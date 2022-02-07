@@ -1,4 +1,4 @@
-/*global describe, it, require*/
+/*global describe, before, it, after, require*/
 
 'use strict';
 
@@ -6,53 +6,21 @@ const stylelint = require('stylelint');
 const styleLintFormatter = require('stylelint-formatter-pretty');
 const assert = require('assert');
 const path = require('path');
-const glob = require('glob');
-
-const scssPath = path.join(__dirname, '../');
-const scssGlob = path.join(scssPath, '/**/*.scss');
 
 let lintResults = {};
-let scssFiles = [];
-
-describe('brei-sass-boilerplate -- verify that files exist in this package -- Test (test/test.js)', function () {
-
-	before(function (done) {
-
-		glob(scssGlob, {}, function (er, files) {
-			scssFiles = files;
-			console.log(scssFiles);
-
-			done();
-		});
-
-	});
-	it('SCSS Files detected', function () {
-		assert.notEqual(scssFiles.length, 0);
-	});
-
-});
 
 describe('brei-sass-boilerplate -- Test (test/test.js)', function () {
 	before(function (done) {
-
-		console.log('--- before ---');
-		console.log(scssGlob);
-		console.log(scssFiles);
-		console.log('--- before ---');
-
 		stylelint.lint({
 			configFile: './.stylelintrc.json',
 			ignorePath: './.stylelintignore',
 			formatter: styleLintFormatter,
-			files: scssGlob,
-			cwd: scssPath
+			files: path.join(__dirname, '../**/*.scss')
 		}).then(function (data) {
-			console.log(data);
 			lintResults = data;
 			done();
 		}).catch(function (err) {
 			// do things with err e.g.
-			console.log(err);
 			console.error(err.stack);
 			done();
 		});

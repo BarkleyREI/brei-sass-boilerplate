@@ -4,9 +4,8 @@
 	"description": "https://github.com/BarkleyREI/brei-sass-boilerplate",
 	"scripts": {
 		"test": "mocha",
-		"postinstall": "npm test",
 		"snyk-protect": "snyk protect",
-		"prepublish": "npm run snyk-protect"
+		"prepare": "npm run snyk-protect && npm test"
 	},
 	"repository": {
 		"type": "git",
@@ -46,17 +45,15 @@
 	},
 	"homepage": "https://github.com/BarkleyREI/brei-sass-boilerplate",
 	"dependencies": {
-		"brei-util": "^1.0.9",
-		"foundation-sites": "~6.7.4",
 		"snyk": "^1.848.0",
+		"foundation-sites": "~6.7.4"
+	},
+	"snyk": true,
+	"devDependencies": {
 		"mocha": "~9.2.0",
 		"postcss-scss": "~4.0.3",
 		"stylelint": "~14.3.0",
 		"stylelint-formatter-pretty": "^3.1.0",
 		"stylelint-scss": "~4.1.0"
-	},
-	"snyk": true,
-	"devDependencies": {
-		"glob": "^7.2.0"
 	}
 }
