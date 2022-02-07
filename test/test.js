@@ -38,12 +38,12 @@ describe('brei-sass-boilerplate -- Test (test/test.js)', function () {
 		console.log(scssGlob);
 		console.log(scssFiles);
 		console.log('--- before ---');
-		
+
 		stylelint.lint({
 			configFile: './.stylelintrc.json',
 			ignorePath: './.stylelintignore',
 			formatter: styleLintFormatter,
-			files: scssGlob
+			files: scssFiles
 		}).then(function (data) {
 			console.log(data);
 			lintResults = data;
