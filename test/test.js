@@ -24,7 +24,6 @@ describe('brei-sass-boilerplate -- Test (test/test.js)', function () {
 			console.error(err.stack);
 			done();
 		});
-
 	});
 	it('Base boilerplate passes linting', function () {
 		assert.equal(lintResults.errored, false);
