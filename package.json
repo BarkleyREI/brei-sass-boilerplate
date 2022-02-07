@@ -46,13 +46,14 @@
 	"homepage": "https://github.com/BarkleyREI/brei-sass-boilerplate",
 	"dependencies": {
 		"snyk": "^1.848.0",
-		"foundation-sites": "~6.7.4",
+		"foundation-sites": "~6.7.4"
+	},
+	"snyk": true,
+	"devDependencies": {
 		"mocha": "~9.2.0",
 		"postcss-scss": "~4.0.3",
 		"stylelint": "~14.3.0",
 		"stylelint-formatter-pretty": "^3.1.0",
 		"stylelint-scss": "~4.1.0"
-	},
-	"snyk": true,
-	"devDependencies": {}
+	}
 }
