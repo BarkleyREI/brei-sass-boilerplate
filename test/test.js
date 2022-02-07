@@ -39,6 +39,7 @@ describe('brei-sass-boilerplate -- Test (test/test.js)', function () {
 			formatter: styleLintFormatter,
 			files: path.join(__dirname, '../**/*.scss')
 		}).then(function (data) {
+			console.log(data);
 			lintResults = data;
 			done();
 		}).catch(function (err) {
