@@ -44,6 +44,7 @@ describe('brei-sass-boilerplate -- Test (test/test.js)', function () {
 			done();
 		}).catch(function (err) {
 			// do things with err e.g.
+			console.log(err);
 			console.error(err.stack);
 			done();
 		});
