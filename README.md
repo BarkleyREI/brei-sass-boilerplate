@@ -53,7 +53,7 @@ WYSIWYG styles that affect content that a user can create in a CMS.
 
 ### Icons
 
-Icon fonts and SVG
+Icon fonts and SVG.
 
 ### Layout
 
