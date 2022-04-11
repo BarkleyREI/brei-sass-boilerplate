@@ -1,6 +1,6 @@
 {
 	"name": "brei-sass-boilerplate",
-	"version": "3.1.1",
+	"version": "3.1.2",
 	"description": "https://github.com/BarkleyREI/brei-sass-boilerplate",
 	"scripts": {
 		"test": "mocha",
@@ -45,7 +45,8 @@
 	},
 	"homepage": "https://github.com/BarkleyREI/brei-sass-boilerplate",
 	"dependencies": {
-		"foundation-sites": "~6.7.4"
+		"foundation-sites": "~6.7.4",
+		"motion-ui": "~2.0.3"
 	},
 	"snyk": true,
 	"devDependencies": {
