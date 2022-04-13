@@ -1,6 +1,6 @@
 {
 	"name": "brei-sass-boilerplate",
-	"version": "3.1.2",
+	"version": "3.1.3",
 	"description": "https://github.com/BarkleyREI/brei-sass-boilerplate",
 	"scripts": {
 		"test": "mocha",
@@ -55,6 +55,6 @@
 		"postcss-scss": "~4.0.3",
 		"stylelint": "~14.3.0",
 		"stylelint-formatter-pretty": "^3.1.0",
-		"stylelint-scss": "~4.1.0"
+		"stylelint-scss": "~4.2.0"
 	}
 }
