@@ -35,7 +35,10 @@ you wish.
 
 7. Uncomment the line in main.scss to refer to _style.scss in the icons folder.
 
-8. Copy the contents of symboldefs.svg into /src/static/app/assemble/includes/_svg.hbs
+8. Copy the symbol definitions into place.
+
+    - For a Modern Project, copy the contents of symboldefs.svg into /src/static/app/assemble/includes/_svg.hbs
+    - For a Pattern Library, copy the contents of symboldefs.svg into /src/static/components/01-elements/03-imagery/_svg.hbs
 
 ## Using Icons
 
